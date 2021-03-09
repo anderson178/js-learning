@@ -1,0 +1,22 @@
+.in_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    padding: 20px;
+}
+
+.in_line_val{
+    width: 250px;   
+    height: 150px;
+    border-right: 0px;
+    padding: 20px;
+}
+
+table.fixed { 
+    table-layout:fixed;
+    width: 100%; 
+}
+table.fixed td { 
+    overflow: hidden; 
+    height: auto;
+}
