@@ -4,7 +4,7 @@ function alertInputText() {
 
 var tmp = 0;
 
-function addRowTable(idTable,idInput) {
+function addRowTable(idTable, idInput) {
     var tbody = document.getElementById(idTable).getElementsByTagName("TBODY")[0];
     var row = document.createElement("tr");
     var td1 = document.createElement("td");
@@ -13,5 +13,5 @@ function addRowTable(idTable,idInput) {
     td2.appendChild(document.createTextNode(document.getElementById(idInput).value));
     row.appendChild(td1);
     row.appendChild(td2);
-    tbody.appendChild(row); 
+    tbody.appendChild(row);
 }
