@@ -1,17 +1,18 @@
-function alertInputText() {
-    alert(document.getElementById('textInput').value);
-}
+describe("multiplyNumeric", function () {
+    it("умножаем все числовые свойства на 2", function () {
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+        multiplyNumeric(menu);
+        assert.equal(menu.width, 400);
+        assert.equal(menu.height, 600);
+        assert.equal(menu.title, "My menu");
+    });
 
-var tmp = 0;
+    it("returns nothing", function () {
+        assert.isUndefined(multiplyNumeric({}));
+    });
 
-function addRowTable(idTable, idInput) {
-    var tbody = document.getElementById(idTable).getElementsByTagName("TBODY")[0];
-    var row = document.createElement("tr");
-    var td1 = document.createElement("td");
-    var td2 = document.createElement("td");
-    td1.appendChild(document.createTextNode(++tmp));
-    td2.appendChild(document.createTextNode(document.getElementById(idInput).value));
-    row.appendChild(td1);
-    row.appendChild(td2);
-    tbody.appendChild(row);
-}
+});
