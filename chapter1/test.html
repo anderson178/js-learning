@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>Test HTML</title>
   <!-- добавим стили mocha для отображения результатов -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
   <!-- добавляем сам фреймворк mocha -->
@@ -15,14 +16,24 @@
   <script>
     // chai предоставляет большое количество функций. Объявим assert глобально
     let assert = chai.assert;
+    let expect = chai.expect
   </script>
   <script src="/chapter1/js/func_app_ui.js"></script>
+
+  
 </head>
 
 <body>
 
+<!-- 	<script>
+		var link = document.querySelector('link[rel=import]');
+		var content = link.import.querySelector('#indexHtml');
+		document.body.appendChild(content.cloneNode(true));
+	</script> -->
+
   <!-- скрипт со спецификацией (describe, it...) -->
   <script src="/chapter1/js/test.js"></script>
+
 
   <!-- элемент с id="mocha" будет содержать результаты тестов -->
   <div id="mocha"></div>

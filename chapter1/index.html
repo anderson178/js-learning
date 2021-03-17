@@ -1,38 +1,51 @@
-<html>
+<div id="indexHtml">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="/chapter1/style/ui.css" />
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="/chapter1/style/ui.css" />
 
 
-</head>
+    </head>
 
-<body>
-    <div class="in_line">
-        <div class="in_line_val">
-            <table border="1" id="inputTable" class="fixed">
-                <caption>Table inner text</caption>
-                <tr>
-                    <td>Input text</td>
-                    <td>Number</td>
-                </tr>
-            </table>
+
+    <body>
+
+        <div class="in_line">
+            <div class="in_line_val">
+                <table border="1" id="inputTable" class="fixed">
+                    <caption>Table inner text</caption>
+                    <tr>
+                        <td>Input text</td>
+                        <td>Number</td>
+                    </tr>
+                </table>
+            </div>
+
+            <script src="/chapter1/js/func_app_ui.js"></script>
+            <div class="in_line_val">
+                <input type="text" id="inputText" />
+            </div>
+            <div class="in_line_val">
+                <button onclick="addRowTable('inputTable', 'inputText')">
+                    buttonClick
+
+                </button>
+            </div>
         </div>
 
-        <script src="/chapter1/js/app_ui.js"></script>
-        <div class="in_line_val">
-            <input type="text" id="inputText" />
-        </div>
-        <div class="in_line_val">
-            <button onclick="addRowTable('inputTable', 'inputText')">
-                buttonClick
 
-            </button>
-        </div>
-    </div>
+        <script>
+            let calc = new Calculator('2','3');
+           
+            console.log(calc.sum());
+            console.log(calc.mul());
+        </script>
 
 
-</body>
+    </body>
 
-</html>
+    </html>
+</div>
